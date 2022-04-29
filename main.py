@@ -12,9 +12,9 @@ def insert(root, key):
         if root.val == key:
             return root
         elif root.val < key:
-            root.right = insert(root.right, key)
-        else:
             root.left = insert(root.left, key)
+        else:
+            root.right = insert(root.right, key)
     return root
  
 def putorder(root):
